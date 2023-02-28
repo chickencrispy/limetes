@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Ki";
+  src: url("fonts/Ki.eot");
+  src: url("fonts/Ki.eot?#iefix") format("embedded-opentype"), url("fonts/Ki.woff") format("woff"), url("fonts/Ki.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dataTables_filter .form-control:focus,
+.dataTables_length .form-select:focus {
+  border-color: var(--bs-border-color);
+  box-shadow: none;
+}
+
+.dataTables_length label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.dataTables_length .form-select {
+  font-size: var(--fs-normal);
+  background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%233F4254' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .5rem center/8px 10px no-repeat;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  font-size: var(--fs-normal);
+}
+
+.dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before {
+  display: grid;
+  place-content: center;
+  box-shadow: none;
+  border-radius: 0;
+  top: 50%;
+  left: 3px;
+  height: 16px;
+  width: 16px;
+  padding-top: 1px;
+  font-size: .5rem;
+  color: rgba(var(--bs-dark-rgb), .5);
+  border: 0;
+  background-color: transparent;
+  font-family: Ki;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  content: "";
+}
+.dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before {
+  color: rgba(var(--bs-dark-rgb), 1);
+  background-color: transparent;
+  font-family: Ki;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  content: "";
+}
+
+.dataTable .dtr-details {
+  width: 100%;
+}
+
+.dataTable .child .dtr-title {
+  min-width: 25% !important;
+}
+
+.data-table-wrapper.table-responsive {
+  overflow: hidden;
+  min-height: 18.5rem;
+}
+
+.dataTables_wrapper>.row:first-child {
+  margin-bottom: .5rem !important;
+}
+
+.dataTables_paginate .page-link {
+  font-size: var(--fs-normal);
+}
+
+@media screen and (max-width: 864px) {
+  .dataTable .child .dtr-data .dropdown-toggle {
+    display: none;
+  }
+
+  .dataTable .child .dtr-data .dropdown-menu {
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    gap: .75rem;
+  }
+
+  .dataTable .child .dtr-data .dropdown-menu .dropdown-item {
+    padding: 2px 5px 0 0;
+  }
+
+  .dataTable .child .dtr-data .dropdown-menu .dropdown-item span {
+    display: none;
+  }
+}

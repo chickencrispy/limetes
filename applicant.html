@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limetes</title>
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/fixedHeader.bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/responsive.bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/datatables-custom.css">
+  <link rel="stylesheet" href="./assets/css/ui.css">
+</head>
+
+<body>
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-top" id="navbar-top">
+    <div class="navbar-top-toggle">
+      <i class="fas fa-bars" id="header-toggle"></i>
+    </div>
+
+    <div class="navbar-top-brand d-flex align-items-center justify-content-center">
+      <div class="navbar-brand text-light me-0">
+        <div class="d-flex align-items-center">
+          <img src="./assets/img/limetes-logo.png" class="brand-logo" width="32" alt="Limetes">
+          <div class="brand-name">
+            <span class="fw-bold">Limetes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-top-profile ms-auto justify-content-end h-100">
+      <a class="nav-link dropdown-toggle" href="#menu-profile" role="button" data-bs-target="#menu-profile"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="avatar" src="https://i.pravatar.cc/150" alt="">
+        <span class="d-none d-lg-inline ms-2">Administrator</span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" id="menu-profile">
+        <li><a class="dropdown-item" href="#">Change Password</a></li>
+        <li><a class="dropdown-item" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SIDE NAVBAR -->
+  <nav class="navbar navbar-vertical" id="navbar-vertical">
+    <div class="navbar-collapse">
+      <div class="navbar-vertical-content scrollbar">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-gauge"></i>
+                <span class="nav-link-text ps-1">Dashboard</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Peserta Tes-->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Peserta Tes</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="applicant.html" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-user"></i>
+                <span class="nav-link-text ps-1">Daftar Peserta</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-chart-simple"></i>
+                <span class="nav-link-text ps-1">Laporan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-indicator" href="#panduan" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panduan">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-circle-question"></i>
+                <span class="nav-link-text ps-1">Panduan</span>
+              </div>
+            </a>
+            <ul class="nav collapse" id="panduan">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes DISC</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes MSDT</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Motivasi</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Light Triad</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Kraepelin</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Aptitude</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Essay</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Karyawan -->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Karyawan</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-address-card"></i>
+                <span class="nav-link-text ps-1">Daftar Karyawan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-qrcode"></i>
+                <span class="nav-link-text ps-1">Smart Absensi</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-check"></i>
+                <span class="nav-link-text ps-1">Smart Payroll</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-money-bill"></i>
+                <span class="nav-link-text ps-1">Smart PHK</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Settings -->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Settings</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-cog"></i>
+                <span class="nav-link-text ps-1">Umum</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-code-branch"></i>
+                <span class="nav-link-text ps-1">Cabang</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-users"></i>
+                <span class="nav-link-text ps-1">Users</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-shield"></i>
+                <span class="nav-link-text ps-1">Jabatan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-star"></i>
+                <span class="nav-link-text ps-1">Level</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-hourglass-start"></i>
+                <span class="nav-link-text ps-1">Durasi</span>
+              </div>
+            </a>
+          </li>
+
+          <hr class="mt-1 mb-0">
+
+          <li class="nav-item mt-2">
+            <a class="nav-link dropdown-indicator" href="#download" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="download">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-download"></i>
+                <span class="nav-link-text ps-1">Download</span>
+              </div>
+            </a>
+            <ul class="nav collapse" id="download">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Form Peserta</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Lembar Jawaban</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Soal Tes</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <hr class="mt-2 mb-0">
+
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-right-from-bracket"></i>
+                <span class="nav-link-text ps-1">Logout</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main class="main" id="main">
+    
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="main-content p-3">
+        <section class="grid-stat mb-4">
+          <div class="row g-3">
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-primary text-light h-100">
+                <h3 class="fw-bold">8</h3>
+                Peserta Tes
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-success text-light h-100">
+                <h3 class="fw-bold">6</h3>
+                Selesai Tes
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-warning text-light h-100">
+                <h3 class="fw-bold">1</h3>
+                User Admin
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-danger text-light h-100">
+                <h3 class="fw-bold">16</h3>
+                Kandidat Tersisa
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row section-title">
+          <div class="col-auto">
+            <h5 class="fw-bold">Daftar Peserta</h5>
+          </div>
+          <div class="col ps-0">
+            <hr>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="applicantTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Peserta Aktif</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Peserta Tidak Aktif</button>
+          </li>
+          <li class="nav-item ms-auto" role="action">
+            <button class="btn btn-sm btn-success"><i class="fas fa-circle-plus me-1"></i> Peserta Baru</button>
+          </li>
+        </ul>
+
+        <div class="tab-content bg-white p-3 border border-top-0" id="applicantTabContent">
+          <!-- Active -->
+          <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
+            <div class="data-table-wrapper scrollbar">
+              <table class="table data-table table-bordered w-100" id="fileData">
+                <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Jabatan</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Cabang</th>
+                    <th scope="col">Telp</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Keterangan</th>
+                    <th scope="col">Catatan</th>
+                    <th scope="col">Tools</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Leon Ruslie</td>
+                    <td>Information Technology</td>
+                    <td>Staff</td>
+                    <td>Jakarta (Head Office)</td>
+                    <td>08116665780</td>
+                    <td>2022-11-08 11:04:43</td>
+                    <td><span class="text-success">Selesai Tes</span></td>
+                    <td>N/A</td>
+                    <td class="text-center">
+                      <a class="text-reset dropdown-toggle" href="#menu-profile1" role="button" data-bs-target="#menu-profile" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" id="menu-profile1">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-eye me-1"></i> <span>Lihat Data</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-pen-to-square me-1"></i> <span>Edit Data</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-power-off me-1"></i> <span>Non-Aktifkan</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-eraser me-1"></i> <span>Reset</span></a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-trash me-1"></i> <span>Hapus</span></a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Unactive -->
+          <div class="tab-pane fade" id="unactive" role="tabpanel" aria-labelledby="unactive-tab">
+            <div class="table-responsive scrollbar">
+              <table class="table data-table w-100">
+                <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Jabatan</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Telp</th>
+                    <th scope="col">Cabang</th>
+                    <th scope="col">Keterangan</th>
+                    <th scope="col">Catatan</th>
+                    <th scope="col">Tools</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="notes border-top pt-3 mt-3">
+            <strong>Keterangan</strong>
+            <ul class="mt-2">
+              <li>Untuk informasi Basic, Advanced dan Complete tes, <a href="#">Click disini</a></li>
+              <li>Untuk panduan mengunakan Limetes, <a href="#">Click disini</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="p-3 bg-white mt-auto border-top">
+      <strong>Copyright &copy; 2023 <a href="#">Limetes</a>.</strong> All rights reserved.
+    </footer>
+  </main>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/chartjs/Chart.min.js"></script>
+  <script src="./assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.bootstrap5.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.fixedHeader.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.responsive.min.js"></script>
+  <script src="./assets/vendor/datatables/js/responsive.bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    $(document).ready( function () {
+      var table = $('.data-table').DataTable({
+        "ordering"   : false,
+        responsive : true
+      });
+      new $.fn.dataTable.FixedHeader( table );
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limetes</title>
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/fixedHeader.bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/datatables/css/responsive.bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/datatables-custom.css">
+  <link rel="stylesheet" href="./assets/css/ui.css">
+</head>
+
+<body>
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-top" id="navbar-top">
+    <div class="navbar-top-toggle">
+      <i class="fas fa-bars" id="header-toggle"></i>
+    </div>
+
+    <div class="navbar-top-brand d-flex align-items-center justify-content-center">
+      <div class="navbar-brand text-light me-0">
+        <div class="d-flex align-items-center">
+          <img src="./assets/img/limetes-logo.png" class="brand-logo" width="32" alt="Limetes">
+          <div class="brand-name">
+            <span class="fw-bold">Limetes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-top-profile ms-auto justify-content-end h-100">
+      <a class="nav-link dropdown-toggle" href="#menu-profile" role="button" data-bs-target="#menu-profile"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="avatar" src="https://i.pravatar.cc/150" alt="">
+        <span class="d-none d-lg-inline ms-2">Administrator</span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" id="menu-profile">
+        <li><a class="dropdown-item" href="#">Change Password</a></li>
+        <li><a class="dropdown-item" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SIDE NAVBAR -->
+  <nav class="navbar navbar-vertical" id="navbar-vertical">
+    <div class="navbar-collapse">
+      <div class="navbar-vertical-content scrollbar">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-gauge"></i>
+                <span class="nav-link-text ps-1">Dashboard</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Peserta Tes-->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Peserta Tes</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="applicant.html" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-user"></i>
+                <span class="nav-link-text ps-1">Daftar Peserta</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-chart-simple"></i>
+                <span class="nav-link-text ps-1">Laporan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-indicator" href="#panduan" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panduan">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-circle-question"></i>
+                <span class="nav-link-text ps-1">Panduan</span>
+              </div>
+            </a>
+            <ul class="nav collapse" id="panduan">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes DISC</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes MSDT</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Motivasi</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Light Triad</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Kraepelin</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Aptitude</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Tes Essay</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Karyawan -->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Karyawan</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-address-card"></i>
+                <span class="nav-link-text ps-1">Daftar Karyawan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-qrcode"></i>
+                <span class="nav-link-text ps-1">Smart Absensi</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-calendar-check"></i>
+                <span class="nav-link-text ps-1">Smart Payroll</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-money-bill"></i>
+                <span class="nav-link-text ps-1">Smart PHK</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- Settings -->
+          <li class="nav-item mt-2">
+            <div class="row navbar-vertical-label-wrapper">
+              <div class="col-auto navbar-vertical-label">Settings</div>
+              <div class="col ps-0">
+                <hr class="mb-0 navbar-vertical-divider">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-cog"></i>
+                <span class="nav-link-text ps-1">Umum</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-code-branch"></i>
+                <span class="nav-link-text ps-1">Cabang</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-users"></i>
+                <span class="nav-link-text ps-1">Users</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-shield"></i>
+                <span class="nav-link-text ps-1">Jabatan</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-star"></i>
+                <span class="nav-link-text ps-1">Level</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-hourglass-start"></i>
+                <span class="nav-link-text ps-1">Durasi</span>
+              </div>
+            </a>
+          </li>
+
+          <hr class="mt-1 mb-0">
+
+          <li class="nav-item mt-2">
+            <a class="nav-link dropdown-indicator" href="#download" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="download">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-download"></i>
+                <span class="nav-link-text ps-1">Download</span>
+              </div>
+            </a>
+            <ul class="nav collapse" id="download">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Form Peserta</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Lembar Jawaban</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-list-check"></i>
+                  <span class="nav-link-text ps-1">Soal Tes</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <hr class="mt-2 mb-0">
+
+          <li class="nav-item mt-2">
+            <a class="nav-link" href="#" role="button">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-right-from-bracket"></i>
+                <span class="nav-link-text ps-1">Logout</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main class="main" id="main">
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="main-content p-3">
+        <div class="alert alert-light" role="alert">
+          <strong>Selamat Datang!</strong>
+          <p class="mt-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat voluptatibus
+            illum eaque culpa architecto, quae, ipsa pariatur est neque quod nobis optio totam sed mollitia impedit
+            consequuntur nesciunt earum?</p>
+        </div>
+
+        <section class="grid-stat mb-4">
+          <div class="row g-3">
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-primary text-light h-100">
+                <h3 class="fw-bold">8</h3>
+                Peserta Tes
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-success text-light h-100">
+                <h3 class="fw-bold">6</h3>
+                Selesai Tes
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-warning text-light h-100">
+                <h3 class="fw-bold">1</h3>
+                User Admin
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card p-3 bg-danger text-light h-100">
+                <h3 class="fw-bold">16</h3>
+                Kandidat Tersisa
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row section-title">
+          <div class="col-auto">
+            <h5 class="fw-bold">Grafik Keseluruhan Kandidat</h5>
+          </div>
+          <div class="col ps-0">
+            <hr>
+          </div>
+        </div>
+
+        <!-- DISC GRAFIK -->
+        <section class="card border mb-3">
+          <div class="card-header p-2 bg-success text-center text-light">
+            <strong>DISC GRAFIK</strong>
+          </div>
+
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Persentase DISC
+                  </div>
+
+                  <div class="card-body text-center">
+                    <canvas id="DiscChart" class="mb-2"></canvas>
+                    <small>Persentase DISC Semua Kandidat</small>
+                  </div>
+
+                  <div class="card-footer p-2 bg-white">
+                    <div class="row g-0">
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">D</strong>
+                        <span class="p-2">23%</span>
+                      </div>
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">I</strong>
+                        <span class="p-2">24%</span>
+                      </div>
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">S</strong>
+                        <span class="p-2">29%</span>
+                      </div>
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">C</strong>
+                        <span class="p-2">24%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Grafik Kesimpulan Karakter
+                  </div>
+                  <div class="card-body p-3">
+                    <canvas id="barChartDisc"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="table-responsive scrollbar">
+                  <table class="table table-sm table-bordered overflow-hidden">
+                    <thead class="text-center bg-light">
+                      <tr>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                        <th scope="col">C01</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center">
+												<td>Inspirational</td>
+												<td>Counselors</td>
+												<td>Persuader</td>
+												<td>Achiever</td>
+												<td>Creative</td>
+												<td>Developer</td>
+												<td>Collaborator</td>
+												<td>Appraiser</td>
+												<td>Objective Thinker</td>
+												<td>Investigator</td>
+												<td>Perfectionist</td>
+											</tr>
+                      <tr class="text-center fw-bold">
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                        <td>0%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="card border">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Kesimpulan
+                  </div>
+                  <div class="card-body">
+                    <p class="text-center">Kekurangan yang mungkin ada pada tim anda adalah:</p>
+                    <div class="text-center">Tim anda sangat praktis dalam bekerja dan merupakan team-player yang
+                      baik. Tetapi mereka adalah pengikut dan tidak menanyakan atau mempersoalkan hal yang mungkin 
+                      salah atau tidak benar bagi mereka. Ini bisa menyebabkan kurangnya ide dan kreativitas baru 
+                      dalam kerja, atau kurang kompetitif dibanding tim lain yang lebih dinamis. 
+                      Ini tidak bagus jika pekerjaannya lebih beragam.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MOTIVATIONAL GRAFIK -->
+        <section class="card border mb-3">
+          <div class="card-header p-2 bg-success text-center text-light">
+            <strong>MOTIVATIONAL GRAFIK</strong>
+          </div>
+
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Persentase Motivation
+                  </div>
+
+                  <div class="card-body text-center">
+                    <canvas id="motivChart" class="mb-2"></canvas>
+                    <small>Persentase Motivation Semua Kandidat</small>
+                  </div>
+
+                  <div class="card-footer p-2 bg-white">
+                    <div class="row g-0">
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">Hygienis</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">Motivasi</strong>
+                        <span class="p-2">100%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Grafik Hygienis dan Motivasi
+                  </div>
+                  <div class="card-body p-3">
+                    <div id="barChartMotiv">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <table class="table table-bordered">
+                  <thead class="text-center bg-success-light">
+                    <tr>
+                      <th>Code</th>
+                      <th>Keterangan</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td>JS</td>
+                      <td class="text-start">Job Satisfaction/Kepuasan Konten Kerja</td>
+                      <th>15,63</th>
+                    </tr>
+                    <tr>
+                      <td>SD</td>
+                      <td class="text-start">Self-Development/Pengembangan Diri</td>
+                      <th>17,75</th>
+                    </tr>
+                    <tr>
+                      <td>WP</td>
+                      <td class="text-start">Work Progress/Perkembangan Konten Kerja</td>
+                      <th>16,25</th>
+                    </tr>
+                    <tr>
+                      <td>AU</td>
+                      <td class="text-start">Authority/Kekuasaan Kerja</td>
+                      <th>15,38</th>
+                    </tr>
+                    <tr>
+                      <td>RWO</td>
+                      <td class="text-start">Relationship With Others/Hubungan Dengan Rekan</td>
+                      <th>15,50</th>
+                    </tr>
+                    <tr>
+                      <td>PR</td>
+                      <td class="text-start">Promotion/Promosi Jabatan</td>
+                      <th>9,88</th>
+                    </tr>
+                    <tr>
+                      <td>SB</td>
+                      <td class="text-start">Salary &amp; Benefit/Gaji - Tunjangan</td>
+                      <th>11,50</th>
+                    </tr>
+                    <tr>
+                      <td>WR</td>
+                      <td class="text-start">Work Recognition/Penghargaan Kerja</td>
+                      <th>10,13</th>
+                    </tr>
+                    <tr>
+                      <td>RWM</td>
+                      <td class="text-start">Relationship With Mgr</td>
+                      <th>16,13</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col-12">
+                <div class="card border">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Kesimpulan
+                  </div>
+                  <div class="card-body">
+                    <p class="text-center">Kekurangan yang mungkin ada pada tim anda adalah:</p>
+                    <p class="text-center">Tergantung seberapa tinggi motivasi dibandingkan hygienis, karyawan anda
+                      sudah merasa cukup nyaman dan ingin mencari hal hal yang lebih tinggi, yang memuaskan
+                      mental-jiwa mereka. Mereka tidak hanya mencari kenyamanan tetapi mencari stimulasi yang bisa
+                      menyemangati mereka.</p>
+                    <p class="text-center">Faktur faktur seperti kepuasan konten kerja dan pengembangan diri perlu
+                      diperhatikan tidak hanya untuk meningkatkan produktivitas mereka tetapi juga meningkatkan
+                      loyalitas dan masa kerja.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- LIGHT TRIAD GRAFIK -->
+        <section class="card border mb-3">
+          <div class="card-header p-2 bg-success text-center text-light">
+            <strong>LIGHT TRIAD GRAFIK</strong>
+          </div>
+
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Persentase LIGHT TRIAD
+                  </div>
+
+                  <div class="card-body text-center">
+                    <canvas id="lightChart" class="mb-2"></canvas>
+                    <small>Persentase LIGHT TRIAD Semua Kandidat</small>
+                  </div>
+
+                  <div class="card-footer p-2 bg-white">
+                    <div class="row g-0">
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">Positivitas</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">Empatis</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    LIGHT TRIAD Description
+                  </div>
+                  <div class="card-body p-3">
+                    <p>Positivitas dan Empatis adalah hal yang semakin tinggi semakin baik. Mereka memengaruhi
+                      hubungan baiknya hubungan kerja, kesabaran dan toleransi antar sesama terhadap konflik yang
+                      terjadi sehari-hari.</p>
+
+                    <table class="table table-bordered">
+                      <tr class="text-center bg-light">
+                        <th colspan="2">Penilaian</th>
+                      </tr>
+                      <tr>
+                        <td>0% - 15%</td>
+                        <td>Dibawah rata-rata</td>
+                      </tr>
+                      <tr>
+                        <td>15% - 30%</td>
+                        <td>Baik</td>
+                      </tr>
+                      <tr>
+                        <td>Lebih dari 30%</td>
+                        <td>Sangat Baik</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- KRAEPLIN VALUE -->
+        <section class="card border mb-3">
+          <div class="card-header p-2 bg-success text-center text-light">
+            <strong>KRAEPLIN VALUE</strong>
+          </div>
+
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-lg-2">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Persentase
+                  </div>
+                  <div class="card-body text-center">
+                    <div class="row g-0">
+                      <div class="col grid-col text-center">
+                        <strong class="p-2 border-bottom bg-light">Persentase Akurasi</strong>
+                        <span class="p-2">36%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Nilai Akurasi
+                  </div>
+                  <div class="card-body text-center">
+                    <div class="row g-0">
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Perfect</strong>
+                        <span class="p-2">34%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Superior</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Baik</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Cukup</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Kurang</strong>
+                        <span class="p-2">67%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Nilai Kestabilan
+                  </div>
+                  <div class="card-body text-center">
+                    <div class="row g-0">
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Perfect</strong>
+                        <span class="p-2">34%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Superior</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Baik</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Cukup</strong>
+                        <span class="p-2">0%</span>
+                      </div>
+                      <div class="col grid-col col-sm text-center">
+                        <strong class="p-2 border-bottom bg-light">Kurang</strong>
+                        <span class="p-2">67%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- APTITUDE GRAPHIC -->
+        <section class="card border mb-3">
+          <div class="card-header p-2 bg-success text-center text-light">
+            <strong>APTITUDE GRAPHIC</strong>
+          </div>
+
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-lg-8">
+                <div class="card border h-100">
+                  <div class="card-header text-center fw-bold bg-success-light">
+                    Grafik Aptitude Value
+                  </div>
+                  <div class="card-body p-3">
+                    <div id="barChartApp"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col grid-col">
+                      <strong class="p-2 bg-success-light">Keterangan</strong>
+                      <span class="p-2">Creativity</span>
+                      <span class="p-2">Logical</span>
+                      <span class="p-2">Numerical</span>
+                      <span class="p-2">Technical</span>
+                    </div>
+                    <div class="col grid-col text-center">
+                      <strong class="p-2 bg-success-light">Penilaian</strong>
+                      <span class="p-2">Rata-rata</span>
+                      <span class="p-2">Rata-rata</span>
+                      <span class="p-2">Rata-rata</span>
+                      <span class="p-2">Rata-rata</span>
+                    </div>
+                    <div class="col grid-col text-center">
+                      <strong class="p-2 bg-success-light">Persentase</strong>
+                      <strong class="p-2">24%</strong>
+                      <strong class="p-2">24%</strong>
+                      <strong class="p-2">24%</strong>
+                      <strong class="p-2">24%</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="p-3 bg-white border-top">
+      <strong>Copyright &copy; 2023 <a href="#">Limetes</a>.</strong> All rights reserved.
+    </footer>
+  </main>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/chartjs/Chart.min.js"></script>
+  <script src="./assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.bootstrap5.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.fixedHeader.min.js"></script>
+  <script src="./assets/vendor/datatables/js/dataTables.responsive.min.js"></script>
+  <script src="./assets/vendor/datatables/js/responsive.bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('#fileData').DataTable({
+        "paging": false,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": false,
+        "info": false,
+        "autoWidth": false
+      });
+    });
+    
+    //Round DISC
+    var pieChartCanvas = $("#DiscChart").get(0).getContext("2d");
+    var pieChart = new Chart(pieChartCanvas);
+    var PieData = [{
+        value: 23,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "Dominance"
+      },
+      {
+        value: 24,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "Influence"
+      },
+      {
+        value: 29,
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "Steadiness"
+      },
+      {
+        value: 24,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "Caution"
+      }
+    ];
+    var pieOptions = {
+      segmentShowStroke: true,
+      segmentStrokeColor: "#fff",
+      segmentStrokeWidth: 2,
+      percentageInnerCutout: 50,
+      animationSteps: 100,
+      animationEasing: "easeOutBounce",
+      animateRotate: true,
+      animateScale: false,
+      responsive: true,
+      maintainAspectRatio: true,
+    };
+    pieChart.Doughnut(PieData, pieOptions);
+
+    //Round MOTIV
+    var pieChartCanvas2 = $("#motivChart").get(0).getContext("2d");
+    var pieChart2 = new Chart(pieChartCanvas2);
+    var PieData2 = [{
+        value: 0,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "Higienis"
+      },
+      {
+        value: 100,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "Motivasi"
+      }
+    ];
+    var pieOptions2 = {
+      segmentShowStroke: true,
+      segmentStrokeColor: "#fff",
+      segmentStrokeWidth: 2,
+      percentageInnerCutout: 50,
+      animationSteps: 100,
+      animationEasing: "easeOutBounce",
+      animateRotate: true,
+      animateScale: false,
+      responsive: true,
+      maintainAspectRatio: true,
+    };
+    pieChart2.Doughnut(PieData2, pieOptions2);
+
+    //Round LIGHT
+    var pieChartCanvas3 = $("#lightChart").get(0).getContext("2d");
+    var pieChart3 = new Chart(pieChartCanvas3);
+    var PieData3 = [{
+        value: 28,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "LT 1"
+      },
+      {
+        value: 27,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "LT 2"
+      },
+      {
+        value: 45,
+        color: "#f5f5f5",
+        highlight: "#f5f5f5"
+      }
+    ];
+    var pieOptions3 = {
+      segmentShowStroke: true,
+      segmentStrokeColor: "#fff",
+      segmentStrokeWidth: 2,
+      percentageInnerCutout: 50,
+      animationSteps: 100,
+      animationEasing: "easeOutBounce",
+      animateRotate: true,
+      animateScale: false,
+      responsive: true,
+      maintainAspectRatio: true,
+    };
+    pieChart3.Doughnut(PieData3, pieOptions3);
+
+    //Bar Chart Disc
+    var bar_data = {
+      data: [
+        ['<strong>C01</strong>', 3],
+        ['<strong>C02</strong>', 2],
+        ['<strong>C03</strong>', 0],
+        ['<strong>C04</strong>', 1],
+        ['<strong>C05</strong>', 0],
+        ['<strong>C06</strong>', 0],
+        ['<strong>C07</strong>', 0],
+        ['<strong>C08</strong>', 0],
+        ['<strong>C09</strong>', 0],
+        ['<strong>C10</strong>', 2],
+        ['<strong>C11</strong>', 0]
+      ],
+      color: '#c0c1ff'
+    }
+    $.plot('#barChartDisc', [bar_data], {
+      grid: {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor: '#f3f3f3'
+      },
+      series: {
+        bars: {
+          show: true,
+          barWidth: 0.5,
+          align: 'center'
+        }
+      },
+      xaxis: {
+        mode: 'categories',
+        tickLength: 0
+      }
+    });
+
+    //Bar Chart Motiv
+    var bar_data = {
+      data: [
+        ['<strong>JS</strong>', 15.625],
+        ['<strong>SD</strong>', 17.75],
+        ['<strong>WP</strong>', 16.25],
+        ['<strong>AU</strong>', 15.375],
+        ['<strong>RWO</strong>', 15.5],
+        ['<strong>PR</strong>', 9.875],
+        ['<strong>SB</strong>', 11.5],
+        ['<strong>WR</strong>', 10.125],
+        ['<strong>RWM</strong>', 16.125]
+      ],
+      color: '#c0c1ff'
+    }
+    $.plot('#barChartMotiv', [bar_data], {
+      grid: {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor: '#f3f3f3'
+      },
+      series: {
+        bars: {
+          show: true,
+          barWidth: 0.5,
+          align: 'center'
+        }
+      },
+      xaxis: {
+        mode: 'categories',
+        tickLength: 0
+      }
+    });
+
+    //Bar Chart APTITUDE
+    var bar_data = {
+      data: [
+        ['<strong>Creativity</strong>', 24],
+        ['<strong>Logical</strong>', 25],
+        ['<strong>Numerical</strong>', 29],
+        ['<strong>Technical</strong>', 25]
+      ],
+      color: '#c0c1ff'
+    }
+    $.plot('#barChartApp', [bar_data], {
+      grid: {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor: '#f3f3f3'
+      },
+      series: {
+        bars: {
+          show: true,
+          barWidth: 0.5,
+          align: 'center'
+        }
+      },
+      xaxis: {
+        mode: 'categories',
+        tickLength: 0
+      }
+    });
+  </script>
+</body>
+</html>
