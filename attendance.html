@@ -69,7 +69,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="applicant.html" role="button">
+            <a class="nav-link" href="applicant.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-user"></i>
                 <span class="nav-link-text ps-1">Daftar Peserta</span>
@@ -155,7 +155,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" role="button">
+            <a class="nav-link active" href="attendance.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-qrcode"></i>
                 <span class="nav-link-text ps-1">Smart Absensi</span>
@@ -290,30 +290,45 @@
     <!-- CONTENT -->
     <div class="content">
       <div class="main-content p-3">
-        <section class="grid-stat mb-4">
+        
+        <div class="row section-title">
+          <div class="col-auto">
+            <h5 class="fw-bold">Smart Absensi</h5>
+          </div>
+          <div class="col ps-0">
+            <hr>
+          </div>
+        </div>
+
+        <section class="card p-4 mb-4 border bg-white">
           <div class="row g-3">
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-primary text-light h-100">
-                <h3 class="fw-bold">8</h3>
-                Peserta Tes
-              </div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-success text-light h-100">
-                <h3 class="fw-bold">6</h3>
-                Selesai Tes
-              </div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-warning text-light h-100">
-                <h3 class="fw-bold">1</h3>
-                User Admin
-              </div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-danger text-light h-100">
-                <h3 class="fw-bold">16</h3>
-                Kandidat Tersisa
+            <div class="col-lg-8">
+              <div class="calendar-grid">
+                <div class="calendar-header p-3">
+                  <a href="#"><i class="fas fa-chevron-left"></i></a>
+                  <h6>Maret 2023</h6>
+                  <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="calendar-day">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+
+                <!-- Push 1st Date -->
+                <style>.calendar-date>.day:first-child {grid-column:4;}</style>
+                <!-- End Style -->
+
+                <div class="calendar-date">
+                  <!--div class="day bg-white">
+                    <div class="day-date">1</div>
+                    <small class="day-status">D3</small>
+                  </div-->
+                </div>
               </div>
             </div>
           </div>
@@ -321,7 +336,7 @@
 
         <div class="row section-title">
           <div class="col-auto">
-            <h5 class="fw-bold">Daftar Peserta</h5>
+            <h5 class="fw-bold">Karyawan Perusahaan</h5>
           </div>
           <div class="col ps-0">
             <hr>
@@ -330,13 +345,10 @@
 
         <ul class="nav nav-tabs" id="applicantTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Peserta Aktif</button>
+            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Karyawan Aktif</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Peserta Tidak Aktif</button>
-          </li>
-          <li class="nav-item ms-auto" role="action">
-            <button class="btn btn-sm btn-success"><i class="fas fa-circle-plus me-1"></i> Peserta Baru</button>
+            <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Karyawan Tidak Aktif</button>
           </li>
         </ul>
 
@@ -344,7 +356,7 @@
           <!-- Active -->
           <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
             <div class="data-table-wrapper scrollbar">
-              <table class="table data-table table-bordered w-100" id="fileData">
+              <table class="table data-table w-100" id="fileData">
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
@@ -352,9 +364,7 @@
                     <th scope="col">Jabatan</th>
                     <th scope="col">Level</th>
                     <th scope="col">Cabang</th>
-                    <th scope="col">Telp</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Keterangan</th>
+                    <th scope="col">Score</th>
                     <th scope="col">Catatan</th>
                     <th scope="col">Tools</th>
                   </tr>
@@ -366,11 +376,9 @@
                     <td>Information Technology</td>
                     <td>Staff</td>
                     <td>Jakarta (Head Office)</td>
-                    <td>08116665780</td>
-                    <td>2022-11-08 11:04:43</td>
-                    <td><span class="text-success">Selesai Tes</span></td>
                     <td>N/A</td>
-                    <td class="text-center">
+                    <td>N/A</td>
+                    <td>
                       <a class="text-reset dropdown-toggle" href="#menu-profile1" role="button" data-bs-target="#menu-profile" data-bs-toggle="dropdown" aria-expanded="false">
                         <span><i class="fa-solid fa-gear"></i></span>
                       </a>
@@ -395,13 +403,11 @@
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">Tanggal</th>
+                    <th scope="col">Nama</th>
                     <th scope="col">Jabatan</th>
                     <th scope="col">Level</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Telp</th>
                     <th scope="col">Cabang</th>
-                    <th scope="col">Keterangan</th>
+                    <th scope="col">Score</th>
                     <th scope="col">Catatan</th>
                     <th scope="col">Tools</th>
                   </tr>
@@ -409,8 +415,6 @@
                 <tbody>
                   <tr>
                     <td>&nbsp;</td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -426,13 +430,12 @@
 
           <div class="notes border-top pt-3 mt-3">
             <strong>Keterangan</strong>
-            <ul class="mt-2">
-              <li>Untuk informasi Basic, Advanced dan Complete tes, <a href="#">Click disini</a></li>
+            <ul class="mt-2 mb-1">
+              <li>Untuk informasi PTKP, <a href="#">Click disini</a></li>
               <li>Untuk panduan mengunakan Limetes, <a href="#">Click disini</a></li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -456,7 +459,12 @@
         "ordering"   : false,
         responsive : true
       });
-      new $.fn.dataTable.FixedHeader( table );
+      //new $.fn.dataTable.FixedHeader( table );
+
+      var dayDate = $('.calendar-date');
+      for (var i = 1; i < 32; i++) { 
+        $('.calendar-date').append('<div class="day bg-white"><div class="day-date">'+i+'</div><small class="day-status">&nbsp;</small></div>');
+      }
     });
   </script>
 </body>

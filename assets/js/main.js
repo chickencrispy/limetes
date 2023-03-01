@@ -20,28 +20,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-  const showNavbar = (toggleId, navId, bodyId, headerId) => {
-    const toggle = document.getElementById(toggleId),
-          nav = document.getElementById(navId),
-          bodypd = document.getElementById(bodyId),
-          headerpd = document.getElementById(headerId)
-
-    // Validate that all variables exist
-    if (toggle && nav && bodypd && headerpd) {
-      toggle.addEventListener('click', () => {
-        // show navbar
-        nav.classList.toggle('expand')
-        // change icon
-        toggle.classList.toggle('close')
-        // add padding to body
-        bodypd.classList.toggle('expand')
-        // add padding to header
-        headerpd.classList.toggle('expands')
-      })
-    }
-  }
-  showNavbar('header-toggle', 'navbar-vertical', 'main', 'navbar-top')
-
   /*===== LINK ACTIVE =====*/
   const linkColor = document.querySelectorAll('.nav_link')
 

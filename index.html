@@ -17,9 +17,9 @@
 <body>
   <!-- TOP NAVBAR -->
   <nav class="navbar navbar-top" id="navbar-top">
-    <div class="navbar-top-toggle">
+    <a href="#navbar-vertical" class="navbar-top-toggle text-light" data-bs-toggle="offcanvas">
       <i class="fas fa-bars" id="header-toggle"></i>
-    </div>
+    </a>
 
     <div class="navbar-top-brand d-flex align-items-center justify-content-center">
       <div class="navbar-brand text-light me-0">
@@ -46,7 +46,7 @@
   </nav>
 
   <!-- SIDE NAVBAR -->
-  <nav class="navbar navbar-vertical" id="navbar-vertical">
+  <nav class="navbar navbar-vertical offcanvas offcanvas-start" tabindex="-1" id="navbar-vertical" aria-labelledby="navbar-vertical">
     <div class="navbar-collapse">
       <div class="navbar-vertical-content scrollbar">
         <ul class="navbar-nav flex-column">
@@ -77,7 +77,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" role="button">
+            <a class="nav-link" href="report.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-chart-simple"></i>
                 <span class="nav-link-text ps-1">Laporan</span>
@@ -147,7 +147,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" role="button">
+            <a class="nav-link" href="employee.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-address-card"></i>
                 <span class="nav-link-text ps-1">Daftar Karyawan</span>
@@ -289,7 +289,7 @@
     <!-- CONTENT -->
     <div class="content">
       <div class="main-content p-3">
-        <div class="alert alert-light" role="alert">
+        <div class="alert alert-success" role="alert">
           <strong>Selamat Datang!</strong>
           <p class="mt-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat voluptatibus
             illum eaque culpa architecto, quae, ipsa pariatur est neque quod nobis optio totam sed mollitia impedit
@@ -353,22 +353,22 @@
                     <small>Persentase DISC Semua Kandidat</small>
                   </div>
 
-                  <div class="card-footer p-2 bg-white">
+                  <div class="card-footer py-3 bg-white">
                     <div class="row g-0">
                       <div class="col grid-col text-center">
-                        <strong class="p-2 border-bottom bg-light">D</strong>
+                        <strong class="p-2 bg-light">D</strong>
                         <span class="p-2">23%</span>
                       </div>
                       <div class="col grid-col text-center">
-                        <strong class="p-2 border-bottom bg-light">I</strong>
+                        <strong class="p-2 bg-light">I</strong>
                         <span class="p-2">24%</span>
                       </div>
                       <div class="col grid-col text-center">
-                        <strong class="p-2 border-bottom bg-light">S</strong>
+                        <strong class="p-2 bg-light">S</strong>
                         <span class="p-2">29%</span>
                       </div>
                       <div class="col grid-col text-center">
-                        <strong class="p-2 border-bottom bg-light">C</strong>
+                        <strong class="p-2 bg-light">C</strong>
                         <span class="p-2">24%</span>
                       </div>
                     </div>
@@ -475,7 +475,7 @@
                     <small>Persentase Motivation Semua Kandidat</small>
                   </div>
 
-                  <div class="card-footer p-2 bg-white">
+                  <div class="card-footer py-3 bg-white">
                     <div class="row g-0">
                       <div class="col grid-col text-center">
                         <strong class="p-2 border-bottom bg-light">Hygienis</strong>
@@ -503,7 +503,7 @@
               </div>
 
               <div class="col">
-                <table class="table table-bordered">
+                <table class="table table-bordered table-nowrap">
                   <thead class="text-center bg-success-light">
                     <tr>
                       <th>Code</th>
@@ -602,7 +602,7 @@
                     <small>Persentase LIGHT TRIAD Semua Kandidat</small>
                   </div>
 
-                  <div class="card-footer p-2 bg-white">
+                  <div class="card-footer py-3 bg-white">
                     <div class="row g-0">
                       <div class="col grid-col text-center">
                         <strong class="p-2 border-bottom bg-light">Positivitas</strong>

@@ -95,6 +95,7 @@
     padding: 0;
     border: none;
     gap: .75rem;
+    z-index: unset;
   }
 
   .dataTable .child .dtr-data .dropdown-menu .dropdown-item {

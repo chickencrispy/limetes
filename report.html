@@ -69,7 +69,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="applicant.html" role="button">
+            <a class="nav-link" href="applicant.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-user"></i>
                 <span class="nav-link-text ps-1">Daftar Peserta</span>
@@ -77,7 +77,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="report.html" role="button">
+            <a class="nav-link active" href="report.html" role="button">
               <div class="d-flex align-items-center">
                 <i class="fas fa-chart-simple"></i>
                 <span class="nav-link-text ps-1">Laporan</span>
@@ -321,117 +321,55 @@
 
         <div class="row section-title">
           <div class="col-auto">
-            <h5 class="fw-bold">Daftar Peserta</h5>
+            <h5 class="fw-bold">Laporan</h5>
           </div>
           <div class="col ps-0">
             <hr>
           </div>
         </div>
 
-        <ul class="nav nav-tabs" id="applicantTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Peserta Aktif</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Peserta Tidak Aktif</button>
-          </li>
-          <li class="nav-item ms-auto" role="action">
-            <button class="btn btn-sm btn-success"><i class="fas fa-circle-plus me-1"></i> Peserta Baru</button>
-          </li>
-        </ul>
-
-        <div class="tab-content bg-white p-3 border border-top-0" id="applicantTabContent">
-          <!-- Active -->
-          <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
-            <div class="data-table-wrapper scrollbar">
-              <table class="table data-table table-bordered w-100" id="fileData">
+        <section class="card p-3 mb-4 border bg-white">
+          <div class="data-table-wrapper scrollbar">
+              <table class="table data-table w-100" id="fileData">
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
                     <th scope="col">Nama</th>
-                    <th scope="col">Jabatan</th>
-                    <th scope="col">Level</th>
                     <th scope="col">Cabang</th>
-                    <th scope="col">Telp</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Keterangan</th>
-                    <th scope="col">Catatan</th>
-                    <th scope="col">Tools</th>
+                    <th scope="col">Tipe</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">DISC</th>
+                    <th scope="col">Motivasi</th>
+                    <th scope="col">Light Tes</th>
+                    <th scope="col">Kraepelin</th>
+                    <th scope="col">Aptitude</th>
+                    <th scope="col">MSDT</th>
+                    <th scope="col">Report</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
                     <td>Leon Ruslie</td>
-                    <td>Information Technology</td>
-                    <td>Staff</td>
                     <td>Jakarta (Head Office)</td>
-                    <td>08116665780</td>
-                    <td>2022-11-08 11:04:43</td>
-                    <td><span class="text-success">Selesai Tes</span></td>
-                    <td>N/A</td>
+                    <td>Basic</td>
+                    <td>2023-01-09 10:19:35</td>
+                    <td>Inspirational</td>
+                    <td>Hygienis</td>
+                    <td>76%</td>
+                    <td>Baik</td>
+                    <td>38%</td>
+                    <td>Developer</td>
                     <td class="text-center">
-                      <a class="text-reset dropdown-toggle" href="#menu-profile1" role="button" data-bs-target="#menu-profile" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span><i class="fa-solid fa-gear"></i></span>
+                      <a class="text-reset" href="#" role="button">
+                        <span><i class="fas fa-eye me-1"></i> Full</span>
                       </a>
-                      <ul class="dropdown-menu dropdown-menu-end" id="menu-profile1">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eye me-1"></i> <span>Lihat Data</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-pen-to-square me-1"></i> <span>Edit Data</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-power-off me-1"></i> <span>Non-Aktifkan</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eraser me-1"></i> <span>Reset</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-trash me-1"></i> <span>Hapus</span></a></li>
-                      </ul>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
-
-          <!-- Unactive -->
-          <div class="tab-pane fade" id="unactive" role="tabpanel" aria-labelledby="unactive-tab">
-            <div class="table-responsive scrollbar">
-              <table class="table data-table w-100">
-                <thead>
-                  <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Jabatan</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Telp</th>
-                    <th scope="col">Cabang</th>
-                    <th scope="col">Keterangan</th>
-                    <th scope="col">Catatan</th>
-                    <th scope="col">Tools</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="notes border-top pt-3 mt-3">
-            <strong>Keterangan</strong>
-            <ul class="mt-2">
-              <li>Untuk informasi Basic, Advanced dan Complete tes, <a href="#">Click disini</a></li>
-              <li>Untuk panduan mengunakan Limetes, <a href="#">Click disini</a></li>
-            </ul>
-          </div>
-        </div>
+        </section>
 
       </div>
     </div>
