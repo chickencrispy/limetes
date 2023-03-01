@@ -15,7 +15,8 @@
 
   --theme-acent: #2c5d07;
   --theme-acent-dark: #275306;
-  --theme-light: #f6fff0;
+  --theme-light: #ebfae1;
+  --theme-lighter: #f6fff0;
   --theme-dark: #222d32;
 }
 
@@ -28,11 +29,11 @@
 body {
   font-family: var(--body-font);
   font-size: var(--fs-normal);
-  background-color: var(--theme-light);
 }
 
 a {
   text-decoration: none;
+  color: var(--theme-acent);
 }
 
 h1, h2, h3, h4, h5 ,h6 {
@@ -86,6 +87,10 @@ h1, h2, h3, h4, h5 ,h6 {
   transform: translateY(-50%) rotate(225deg)
 }
 
+.text-theme {
+  color: var(--theme-acent);
+}
+
 .bg-primary {
   background-color: rgba(59, 113, 202, 1) !important;
 }
@@ -115,6 +120,103 @@ h1, h2, h3, h4, h5 ,h6 {
 .card {
   border: 0;
   box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
+}
+
+
+/* ===== LOGIN ===== */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.login-aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--theme-acent);
+  color: var(--bs-light);
+}
+
+.login-text,
+.login-footer {
+  display: none;
+}
+
+.login-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-2.5rem);
+}
+
+.login-form {
+  width: 350px;
+}
+
+.login-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.login-form .form-control {
+  height: auto;
+  padding: 1rem;
+  font-size: var(--fs-normal);
+  background-color: var(--theme-lighter);
+  border-color: var(--theme-lighter);
+  color: #3F4254;
+}
+
+.login-form .form-control:focus {
+  background-color: var(--theme-light);
+  border-color: var(--theme-light);
+  color: #3F4254;
+  box-shadow: none;
+}
+
+.login-form .btn {
+  padding: .75rem 2rem;
+  font-size: var(--fs-normal);
+  font-weight: 600;
+  background-color: var(--theme-acent);
+  color: var(--bs-light);
+}
+
+.get-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .login-wrapper {
+    flex-direction: row;
+  }
+
+  .login-aside {
+    width: 33.3%;
+    padding: 2rem;
+  }
+
+  .login-text,
+  .login-footer {
+    display: block;
+  }
+
+  .get-apps {
+    flex-direction: row;
+    gap: .5rem;
+  }
 }
 
 /* ===== NAVBAR TOP ===== */
