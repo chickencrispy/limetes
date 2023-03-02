@@ -122,6 +122,11 @@ h1, h2, h3, h4, h5 ,h6 {
   box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
 }
 
+.btn-sm {
+  padding: .375rem 1rem;
+  font-size: var(--fs-normal);
+}
+
 
 /* ===== LOGIN ===== */
 .login-wrapper {
@@ -552,4 +557,37 @@ h1, h2, h3, h4, h5 ,h6 {
   .table-responsive td {
     white-space: wrap;
   }
+}
+
+/* ===== FORM ====== */
+
+.form-wrapper .form-control {
+  margin-bottom: 1rem;
+}
+
+.form-wrapper .form-group label {
+  margin-bottom: .375rem;
+}
+
+.form-control-fluid {
+  height: auto;
+  padding: .5rem .75rem;
+  font-size: var(--fs-normal);
+  background-color: #F3F6F9;
+  border-color: #F3F6F9;
+  color: #3F4254;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: #EBEDF3;
+  border-color: #EBEDF3;
+  color: #3F4254;
+}
+
+/* ===== MODAL ===== */
+
+.modal .btn {
+  padding: .5rem 1.5rem;
+  font-size: var(--fs-normal);
 }
