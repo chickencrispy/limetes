@@ -161,11 +161,10 @@ h1, h2, h3, h4, h5 ,h6 {
 .login-box {
   display: flex;
   flex-direction: column;
-  transform: translateY(-2.5rem);
 }
 
 .login-form {
-  width: 350px;
+  width: 400px;
 }
 
 .login-form .form-group {
@@ -516,6 +515,15 @@ h1, h2, h3, h4, h5 ,h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.calendar-grid .calendar-header .btn-nav {
+  border: 1px solid var(--bs-border-color);
+}
+
+.calendar-grid .calendar-header .header-month {
+  font-size: var(--fs-md);
+  font-weight: bold;
 }
 
 .calendar-grid .calendar-day,
