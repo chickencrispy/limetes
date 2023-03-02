@@ -176,14 +176,14 @@ h1, h2, h3, h4, h5 ,h6 {
   height: auto;
   padding: 1rem;
   font-size: var(--fs-normal);
-  background-color: var(--theme-lighter);
-  border-color: var(--theme-lighter);
+  background-color: #F3F6F9;
+  border-color: #F3F6F9;
   color: #3F4254;
 }
 
 .login-form .form-control:focus {
-  background-color: var(--theme-light);
-  border-color: var(--theme-light);
+  background-color: #EBEDF3;
+  border-color: #EBEDF3;
   color: #3F4254;
   box-shadow: none;
 }
