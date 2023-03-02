@@ -290,8 +290,6 @@
     <!-- CONTENT -->
     <div class="content">
       <div class="main-content p-3">
-        
-
         <div class="row section-title">
           <div class="col-auto">
             <h5 class="fw-bold">Karyawan Perusahaan</h5>
@@ -301,16 +299,21 @@
           </div>
         </div>
 
-        <ul class="nav nav-tabs" id="applicantTab" role="tablist">
+        <ul class="nav nav-tabs" id="employeeTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Karyawan Aktif</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Karyawan Tidak Aktif</button>
           </li>
+          <li class="nav-item ms-auto" role="action">
+            <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#modalNewEmployee">
+              <i class="fas fa-circle-plus me-1"></i> Karyawan Baru
+            </button>
+          </li>
         </ul>
 
-        <div class="tab-content bg-white p-3 border border-top-0" id="applicantTabContent">
+        <div class="tab-content bg-white p-3 border border-top-0" id="employeeTabContent">
           <!-- Active -->
           <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
             <div class="data-table-wrapper scrollbar">
