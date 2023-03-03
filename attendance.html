@@ -289,7 +289,7 @@
     
     <!-- CONTENT -->
     <div class="content">
-      <div class="main-content p-3">
+      <div class="main-content p-4">
         
         <div class="row section-title">
           <div class="col-auto">
@@ -302,15 +302,16 @@
 
         <section class="card p-4 mb-4 border bg-white">
           <div class="row g-3">
+
+            <!-- CALENDAR -->
             <div class="col-lg-7">
               <div class="calendar-grid">
-
-                <div class="calendar-header py-3">
+                <div class="calendar-header mb-3">
                   <button class="btn btn-sm btn-light btn-nav">
                     <i class="fas fa-chevron-left"></i>
                   </button>
                   <div class="header-month">
-                    Maret 2023
+                    March 2023
                   </div>
                   <button class="btn btn-sm btn-light btn-nav">
                     <i class="fas fa-chevron-right"></i>
@@ -328,14 +329,104 @@
                 </div>
 
                 <!-- Push 1st Date -->
-                <style>.calendar-date>.day:first-child {grid-column:4;}</style>
+                <style>
+                  .calendar-date>.day:first-child {
+                    grid-column: 4;
+                  }
+                </style>
                 <!-- End Style -->
 
                 <div class="calendar-date">
                   <!--div class="day bg-white">
-                    <div class="day-date">1</div>
-                    <small class="day-status">D3</small>
-                  </div-->
+                        <div class="day-date">1</div>
+                        <small class="day-status">D3</small>
+                      </div-->
+                </div>
+              </div>
+            </div>
+
+            <!-- LEGEND -->
+            <div class="col-lg-5">
+              <div class="legend">
+                <div class="legend-item">
+                  <div class="legend-code bg-purple">PH</div>
+                  <div class="legend-text">Public Holiday</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-cyan">EO</div>
+                  <div class="legend-text">Extra Off</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-cyan">ML</div>
+                  <div class="legend-text">Maturity Leave</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-cyan">SL</div>
+                  <div class="legend-text">Sick Leave</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-danger">UL</div>
+                  <div class="legend-text">Unpaid Leave</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-orange">Mx</div>
+                  <div class="legend-text">Morning Shift (8H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-primary">Dx</div>
+                  <div class="legend-text">Day Shift (8H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-warning">Ax</div>
+                  <div class="legend-text">Afternoon Shift (8H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-dark">Nx</div>
+                  <div class="legend-text">Night Shift (8H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-orange">Mx.4H</div>
+                  <div class="legend-text">Morning Shift (4H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-primary">Dx.4H</div>
+                  <div class="legend-text">Day Shift (4H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-warning">Ax.4H</div>
+                  <div class="legend-text">Afternoon Shift (4H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-dark">Nx.4H</div>
+                  <div class="legend-text">Night Shift (4H)</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code border text-dark">0</div>
+                  <div class="legend-text">Absence</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-success-light text-dark">1</div>
+                  <div class="legend-text">Present</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-navy">CE</div>
+                  <div class="legend-text">Come Early</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-warning">CL</div>
+                  <div class="legend-text">Come Late</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-danger">GE</div>
+                  <div class="legend-text">Goback Early</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-navy">GL</div>
+                  <div class="legend-text">Goback Late</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-code bg-danger">-1</div>
+                  <div class="legend-text">Present</div>
                 </div>
               </div>
             </div>

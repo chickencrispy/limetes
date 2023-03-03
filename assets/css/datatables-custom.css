@@ -31,10 +31,11 @@
   place-content: center;
   box-shadow: none;
   border-radius: 0;
-  top: 50%;
+  top: .5rem;
   left: 3px;
   height: 16px;
   width: 16px;
+  margin-top: 0;
   padding-top: 1px;
   font-size: .5rem;
   color: rgba(var(--bs-dark-rgb), .5);
@@ -83,7 +84,7 @@
 
 .dataTables_paginate .page-link {
   font-size: var(--fs-normal);
-}
+}dtr
 
 @media screen and (max-width: 864px) {
   .dataTable .child .dtr-data .dropdown-toggle {
