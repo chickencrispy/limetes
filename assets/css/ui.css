@@ -173,17 +173,23 @@ h1, h2, h3, h4, h5 ,h6 {
 .login-box {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  max-width: 90%;
 }
 
-.login-form {
-  width: 400px;
+.register-box {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  max-width: 90%;
 }
 
 .login-form .form-group {
   margin-bottom: 1rem;
 }
 
-.login-form .form-control {
+.login-form .form-control,
+.login-form .form-select {
   height: auto;
   padding: 1rem;
   font-size: var(--fs-normal);
@@ -192,12 +198,21 @@ h1, h2, h3, h4, h5 ,h6 {
   color: #3F4254;
 }
 
-.login-form .form-control:focus {
+.login-form .form-control:focus,
+.login-form .form-control:focus ~ .form-select,
+.login-form .form-select:focus,
+.login-form .form-select:focus ~ .form-control {
   background-color: #EBEDF3;
   border-color: #EBEDF3;
   color: #3F4254;
   box-shadow: none;
 }
+
+.login-form .input-group-tel .form-select {
+  flex: inherit;
+  width: 6rem;
+}
+
 
 .login-form .btn {
   padding: .75rem 2rem;
@@ -622,20 +637,29 @@ h1, h2, h3, h4, h5 ,h6 {
   margin-bottom: .375rem;
 }
 
-.form-control-fluid {
-  height: auto;
-  padding: .5rem .75rem;
+.form-control-fluid,
+.form-select-fluid {
+  height: fit-content;
+  padding: .75rem;
   font-size: var(--fs-normal);
   background-color: #F3F6F9;
   border-color: #F3F6F9;
   color: #3F4254;
 }
 
-.form-control:focus {
+.form-control-fluid:focus,
+.form-select-fluid:focus,
+.input-group .form-control-fluid:focus + .form-select-fluid,
+.input-group .form-select-fluid:focus ~ .form-control-fluid {
   box-shadow: none;
   background-color: #EBEDF3;
   border-color: #EBEDF3;
   color: #3F4254;
+}
+
+.input-group-tel .form-select {
+  flex: inherit;
+  width: 6rem;
 }
 
 /* ===== MODAL ===== */

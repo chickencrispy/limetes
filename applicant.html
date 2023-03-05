@@ -446,7 +446,7 @@
   <!-- MODAL NEW APPLICANT -->
   <div class="modal fade" id="modalNewApplicant" tabindex="-1" aria-labelledby="modalNewApplicantLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-      <div class="modal-content rounded-0">
+      <div class="modal-content">
         <form action="">
           <div class="modal-header">
             <h6 class="modal-title fs-6 fw-bold" id="modalNewApplicantLabel">Peserta Baru</h6>
@@ -464,7 +464,12 @@
               </div>
               <div class="form-group">
                 <label>Telepon</label>
-                <input type="tel" name="" id="" class="form-control form-control-fluid">
+                <div class="input-group input-group-tel">
+                  <select name="" id="" class="form-select form-select-fluid">
+                    <option value="">+62</option>
+                  </select>
+                  <input type="tel" class="form-control form-control-fluid" placeholder="Phone number">
+                </div>
               </div>
               <div class="form-group">
                 <label>Password</label>
