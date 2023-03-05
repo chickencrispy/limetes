@@ -139,6 +139,32 @@ h1, h2, h3, h4, h5 ,h6 {
   font-size: var(--fs-normal);
 }
 
+.table td .label {
+  padding: .25rem .5rem;
+  border-radius: var(--bs-border-radius);
+  white-space: nowrap;
+}
+
+.table td .label-primary {
+  background-color: #dfe7f6;
+  color: var(--bs-primary);
+}
+
+.table td .label-success {
+  background-color: #d6f0e0;
+  color: var(--bs-success);
+}
+
+.table td .label-warning {
+  background-color: #fbf0da;
+  color: var(--bs-warning);
+}
+
+.table td .label-danger {
+  background-color: #f9e1e5;
+  color: var(--bs-danger);
+}
+
 
 /* ===== LOGIN ===== */
 .login-wrapper {
