@@ -515,10 +515,6 @@ h1, h2, h3, h4, h5 ,h6 {
   border-color: var(--bs-border-color);
 }
 
-.table-responsive td {
-  white-space: nowrap;
-}
-
 .nav-tabs .nav-link {
   border-radius: 0;
   color: var(--bs-muted);
@@ -581,6 +577,15 @@ h1, h2, h3, h4, h5 ,h6 {
 .calendar-grid .calendar-date > .day > .day-date {
   font-weight: 500;
   margin-left: auto;
+}
+
+.calendar-ph {
+  margin-top: 1rem;
+  font-size: var(--fs-normal);
+}
+
+.ph-item > span:first-child {
+  margin-right: .5rem;
 }
 
 .legend {
