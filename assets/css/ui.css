@@ -150,6 +150,11 @@ h1, h2, h3, h4, h5 ,h6 {
   color: var(--bs-primary);
 }
 
+.table td .label-secondary {
+  background-color: #ebedef;
+  color: var(--bs-secondary);
+}
+
 .table td .label-success {
   background-color: #d6f0e0;
   color: var(--bs-success);
@@ -163,6 +168,16 @@ h1, h2, h3, h4, h5 ,h6 {
 .table td .label-danger {
   background-color: #f9e1e5;
   color: var(--bs-danger);
+}
+
+.table td .label-info {
+  background-color: #def1f7;
+  color: var(--bs-info);
+}
+
+.table td .label-light {
+  background-color: #f5f5f5;
+  color: var(--bs-dark);
 }
 
 
