@@ -184,12 +184,12 @@ h1, h2, h3, h4, h5 ,h6 {
   max-width: 90%;
 }
 
-.login-form .form-group {
+.form-group {
   margin-bottom: 1rem;
 }
 
-.login-form .form-control,
-.login-form .form-select {
+.form-control-solid,
+.form-select-solid {
   height: auto;
   padding: 1rem;
   font-size: var(--fs-normal);
@@ -198,21 +198,15 @@ h1, h2, h3, h4, h5 ,h6 {
   color: #3F4254;
 }
 
-.login-form .form-control:focus,
-.login-form .form-control:focus ~ .form-select,
-.login-form .form-select:focus,
-.login-form .form-select:focus ~ .form-control {
+.form-control-solid:focus,
+.form-control-solid:focus ~ .form-select-solid,
+.form-select-solid:focus,
+.form-select-solid:focus ~ .form-control-solid {
   background-color: #EBEDF3;
   border-color: #EBEDF3;
   color: #3F4254;
   box-shadow: none;
 }
-
-.login-form .input-group-tel .form-select {
-  flex: inherit;
-  width: 6rem;
-}
-
 
 .login-form .btn {
   padding: .75rem 2rem;
@@ -637,20 +631,20 @@ h1, h2, h3, h4, h5 ,h6 {
   margin-bottom: .375rem;
 }
 
-.form-control-fluid,
-.form-select-fluid {
-  height: fit-content;
-  padding: .75rem;
+.form-control-solid,
+.form-select-solid {
+  /*height: fit-content;
+  padding: .75rem;*/
   font-size: var(--fs-normal);
   background-color: #F3F6F9;
   border-color: #F3F6F9;
   color: #3F4254;
 }
 
-.form-control-fluid:focus,
-.form-select-fluid:focus,
-.input-group .form-control-fluid:focus + .form-select-fluid,
-.input-group .form-select-fluid:focus ~ .form-control-fluid {
+.form-control-solid:focus,
+.form-select-solid:focus,
+.input-group .form-control-solid:focus + .form-select-solid,
+.input-group .form-select-solid:focus ~ .form-control-solid {
   box-shadow: none;
   background-color: #EBEDF3;
   border-color: #EBEDF3;
