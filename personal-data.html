@@ -290,200 +290,266 @@
     <!-- CONTENT -->
     <div class="content">
       <div class="main-content p-3">
-        <section class="grid-stat mb-4">
-          <div class="row g-3">
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-primary text-light h-100">
-                <h3 class="fw-bold">8</h3>
-                Peserta Tes
+        <div class="row g-3">
+          <div class="col-lg-3">
+            <div class="card p-3">
+              <div class="profile-side">
+                <img src="https://i.pravatar.cc/150" class="profile-pic">
+                <div class="profile-info">
+                  <h6 class="fw-bold mb-2">Leon Ruslie</h6>
+                  <div class="text-muted">Information Technology</div>
+                  <div class="text-muted">leon.ruslie@sobatam.com</div>
+                  <div class="text-muted">(+62) 8116665780</div>
+                  <hr class="my-2">
+                  <div class="text-primary">Basic Test</div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-success text-light h-100">
-                <h3 class="fw-bold">6</h3>
-                Selesai Tes
-              </div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-warning text-light h-100">
-                <h3 class="fw-bold">1</h3>
-                User Admin
-              </div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="card p-3 bg-purple text-light h-100">
-                <h3 class="fw-bold">16</h3>
-                Kandidat Tersisa
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <div class="row section-title">
-          <div class="col-auto">
-            <h5 class="fw-bold">Daftar Peserta</h5>
+            <div class="nav nav-fill profile-menu flex-lg-column nav-pills" id="profile-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="profile-data-tab" data-bs-toggle="pill" data-bs-target="#profile-data" type="button" role="tab" aria-controls="profile-data" aria-selected="true">Personal Data</button>
+              <button class="nav-link" id="profile-education-tab" data-bs-toggle="pill" data-bs-target="#profile-education" type="button" role="tab" aria-controls="profile-education" aria-selected="false">Education</button>
+              <button class="nav-link" id="profile-language-tab" data-bs-toggle="pill" data-bs-target="#profile-language" type="button" role="tab" aria-controls="profile-language" aria-selected="false">Language</button>
+              <button class="nav-link" id="profile-experience-tab" data-bs-toggle="pill" data-bs-target="#profile-experience" type="button" role="tab" aria-controls="profile-experience" aria-selected="false">Work Experience</button>
+            </div>
           </div>
-          <div class="col ps-0">
-            <hr>
+
+          <div class="col-lg-9">
+            <div class="card tab-content" id="profile-tabContent">
+              <!-- Personal Data -->
+              <div class="tab-pane fade show active" id="profile-data" role="tabpanel" aria-labelledby="profile-data-tab" tabindex="0">
+                <div class="card-header p-3 bg-white fs-6 fw-bold">Personal Data</div>
+                <div class="card-body">
+                  <div class="data-table-wrapper scrollbar">
+                    <table class="table table-list">
+                      <tbody>
+                        <tr>
+                          <td>Nama Lengkap</td>
+                          <td>Leon Ruslie</td>
+                        </tr>
+                        <tr>
+                          <td>Jabatan</td>
+                          <td>Information Technology</td>
+                        </tr>
+                        <tr>
+                          <td>Level</td>
+                          <td>Staff</td>
+                        </tr>
+                        <tr>
+                          <td>Jenis Identitas</td>
+                          <td>KTP</td>
+                        </tr>
+                        <tr>
+                          <td>Nomor Identitas</td>
+                          <td>2171100608059003</td>
+                        </tr>
+                        <tr>
+                          <td>Tempat Tanggal Lahir</td>
+                          <td>Batam, 06-08-2005 </td>
+                        </tr>
+                        <tr>
+                          <td>Alamat</td>
+                          <td>Baloi One Residence Blok A5, Kepulauan Riau, Kota Batam, Lubuk Baja, 29431</td>
+                        </tr>
+                        <tr>
+                          <td>Jenis Kelamin</td>
+                          <td>
+                            Pria </td>
+                        </tr>
+                        <tr>
+                          <td>Agama</td>
+                          <td>Buddha</td>
+                        </tr>
+                        <tr>
+                          <td>Status</td>
+                          <td>Lajang</td>
+                        </tr>
+                        <tr>
+                          <td>Hobi</td>
+                          <td>Membaca Komik, Main Game </td>
+                        </tr>
+                        <tr>
+                          <td>Telp Rumah</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Telp Kantor</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Telp Orang Tua</td>
+                          <td>081277331999 </td>
+                        </tr>
+                        <tr>
+                          <td>Berkacamata?</td>
+                          <td>Ya </td>
+                        </tr>
+                        <tr>
+                          <td>Tinggi Badan</td>
+                          <td>167 CM </td>
+                        </tr>
+                        <tr>
+                          <td>Berat Badan</td>
+                          <td>56 KG </td>
+                        </tr>
+                        <tr>
+                          <td>Jenis Kendaraaan</td>
+                          <td>Motor </td>
+                        </tr>
+                        <tr>
+                          <td>Keterangan</td>
+                          <td><span class="label label-success">Selesai Tes</span></td>
+                        </tr>
+                        <tr>
+                          <td>Tanggal Submit</td>
+                          <td>2022-11-08 11:04:43</td>
+                        </tr>
+                        <tr>
+                          <td>Cabang</td>
+                          <td>Jakarta (Head Office)</td>
+                        </tr>
+                        <tr>
+                          <td>Catatan</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Keterangan Status</td>
+                          <td><span class="label label-success">Aktif</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Data -->
+              <div class="tab-pane fade" id="profile-education" role="tabpanel" aria-labelledby="profile-education-tab" tabindex="0">
+                <div class="card-header p-3 bg-white fs-6 fw-bold">Education</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Tingkat Pendidikan</th>
+                          <th>Nama Sekolah</th>
+                          <th>Alamat Sekolah</th>
+                          <th>Jurusan</th>
+                          <th>Dari Tahun</th>
+                          <th>Sampai Tahun</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>SMA</td>
+                          <td>Smk Maitreyawira</td>
+                          <td>Baloi One Residence Blok A5, Kepulauan Riau, Kota </td>
+                          <td>Multimedia</td>
+                          <td>2021</td>
+                          <td>2023</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Language -->
+              <div class="tab-pane fade" id="profile-language" role="tabpanel" aria-labelledby="profile-language-tab" tabindex="0">
+                <div class="card-header p-3 bg-white fs-6 fw-bold">Language</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Bahasa</th>
+                          <th class="text-center">Mendengarkan</th>
+                          <th class="text-center">Membaca</th>
+                          <th class="text-center">Berbicara</th>
+                          <th class="text-center">Menulis</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Indonesia</td>
+                          <td class="text-center">Baik</td>
+                          <td class="text-center">Baik</td>
+                          <td class="text-center">Baik</td>
+                          <td class="text-center">Baik</td>
+                        </tr>
+                        <tr>
+                          <td>Inggris</td>
+                          <td class="text-center">Cukup</td>
+                          <td class="text-center">Cukup</td>
+                          <td class="text-center">Cukup</td>
+                          <td class="text-center">Cukup</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Work Experience -->
+              <div class="tab-pane fade" id="profile-experience" role="tabpanel" aria-labelledby="profile-experience-tab" tabindex="0">
+                <div class="card-header p-3 bg-white fs-6 fw-bold">Work Experience</div>
+                <div class="card-body">
+                  <div class="data-table-wrapper scrollbar">
+                    <table class="table table-list">
+                      <tbody>
+                        <tr>
+                          <td>Nama Perusahaan</td>
+                          <td>Cv. Tizo Kemasan Indonesia</td>
+                        </tr>
+                        <tr>
+                          <td>Alamat Perusahaan</td>
+                          <td>Ruko Glory View Blok H No 6/7, Batam, Riau, Indonesia</td>
+                        </tr>
+                        <tr>
+                          <td>Jenis Perusahaan</td>
+                          <td>Perusahaan Produksi</td>
+                        </tr>
+                        <tr>
+                          <td>Jabatan</td>
+                          <td>Staff</td>
+                        </tr>
+                        <tr>
+                          <td>Dari</td>
+                          <td>June 2021</td>
+                        </tr>
+                        <tr>
+                          <td>Sampai</td>
+                          <td>July 2021</td>
+                        </tr>
+                        <tr>
+                          <td>Gaji Terakhir</td>
+                          <td>Rp. 0</td>
+                        </tr>
+                        <tr>
+                          <td>Total Karyawan</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>Alasan Keluar</td>
+                          <td>Masa libur habis (Saya melakukan PKL di Cv. Tizo Kemasan Indonesia selama masa libur kelulusan SMP untuk menambah pengalaman kerja).</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <ul class="nav nav-tabs" id="applicantTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">Peserta Aktif</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="unactive-tab" data-bs-toggle="tab" data-bs-target="#unactive" type="button" role="tab" aria-controls="unactive" aria-selected="false">Peserta Tidak Aktif</button>
-          </li>
-          <li class="nav-item ms-auto" role="action">
-            <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#modalNewApplicant">
-              <i class="fas fa-circle-plus me-1"></i> Peserta Baru
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content bg-white p-3 border border-top-0" id="applicantTabContent">
-          <!-- Active -->
-          <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active-tab">
-            <div class="data-table-wrapper scrollbar">
-              <table class="table data-table w-100" id="fileData">
-                <thead class="bg-light">
-                  <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Jabatan</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Cabang</th>
-                    <th scope="col">Telp</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Keterangan</th>
-                    <th scope="col">Catatan</th>
-                    <th scope="col">Tools</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Leon Ruslie</td>
-                    <td>Information Technology</td>
-                    <td>Staff</td>
-                    <td>Jakarta (Head Office)</td>
-                    <td>08116665780</td>
-                    <td>2022-11-08 11:04:43</td>
-                    <td><span class="label label-success rounded">Selesai Tes</span></td>
-                    <td>N/A</td>
-                    <td class="text-center">
-                      <a class="label label-secondary border text-reset dropdown-toggle" href="#menu-profile1" role="button" data-bs-target="#menu-profile" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span><i class="fa-solid fa-gear"></i></span>
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end" id="menu-profile1">
-                        <li><a class="dropdown-item" href="personal-data.html"><i class="fas fa-eye me-1"></i> <span>Lihat Data</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-pen-to-square me-1"></i> <span>Edit Data</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-power-off me-1"></i> <span>Non-Aktifkan</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-eraser me-1"></i> <span>Reset</span></a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-trash me-1"></i> <span>Hapus</span></a></li>
-                      </ul>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Unactive -->
-          <div class="tab-pane fade" id="unactive" role="tabpanel" aria-labelledby="unactive-tab">
-            <div class="table-responsive scrollbar">
-              <table class="table data-table w-100">
-                <thead>
-                  <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Jabatan</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Telp</th>
-                    <th scope="col">Cabang</th>
-                    <th scope="col">Keterangan</th>
-                    <th scope="col">Catatan</th>
-                    <th scope="col">Tools</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="notes border-top pt-3 mt-3">
-            <strong>Keterangan</strong>
-            <ul class="mt-2">
-              <li>Untuk informasi Basic, Advanced dan Complete tes, <a href="#">Click disini</a></li>
-              <li>Untuk panduan mengunakan Limetes, <a href="#">Click disini</a></li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
+
+    
+    
 
     <footer class="p-3 bg-white mt-auto border-top">
       <strong>Copyright &copy; 2023 <a href="#">Limetes</a>.</strong> All rights reserved.
     </footer>
   </main>
-
-  <!-- MODAL NEW APPLICANT -->
-  <div class="modal fade" id="modalNewApplicant" tabindex="-1" aria-labelledby="modalNewApplicantLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen-sm-down">
-      <div class="modal-content">
-        <form action="">
-          <div class="modal-header">
-            <h6 class="modal-title fs-6 fw-bold" id="modalNewApplicantLabel">Peserta Baru</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="p-2">
-              <div class="form-group">
-                <input type="text" class="form-control form-control-solid" placeholder="Fullname">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control form-control-solid" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <div class="input-group input-group-tel">
-                  <select name="" id="" class="form-select form-select-solid">
-                    <option value="">+62</option>
-                  </select>
-                  <input type="tel" class="form-control form-control-solid" placeholder="Phone number">
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control form-control-solid" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-control-solid" placeholder="Position to apply">
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-success">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
@@ -496,7 +562,7 @@
   <script>
     $(document).ready( function () {
       var table = $('.data-table').DataTable({
-        "ordering"   : false,
+        "ordering"   : true,
         responsive : true
       });
     });
