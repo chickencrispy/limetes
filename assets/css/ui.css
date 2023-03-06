@@ -687,8 +687,12 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .profile-menu {
-  margin-top: .5rem;
+  margin-top: 1rem;
   gap: .5rem;
+  padding: 1rem;
+  background-color: var(--bs-white);
+  border-radius: var(--bs-border-radius);
+  box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
 }
 
 .profile-menu .nav-link {
@@ -715,6 +719,13 @@ h1, h2, h3, h4, h5 ,h6 {
 
   .legend {
     grid-template-columns: repeat(2, 47%);
+  }
+
+  .profile-menu {
+    margin-top: 1rem;
+    padding: 0;
+    background-color: unset;
+    box-shadow: unset;
   }
 }
 
