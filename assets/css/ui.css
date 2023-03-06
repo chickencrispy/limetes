@@ -673,16 +673,17 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .profile-side {
-  text-align: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .profile-side .profile-pic {
-  width: 150px;
-  margin-bottom: 1rem;
+  width: 125px;
   border-radius: var(--bs-border-radius);
 }
 
 .profile-side .profile-info {
+  flex: 1 0 auto;
   line-height: 1.25rem;
 }
 
@@ -719,6 +720,19 @@ h1, h2, h3, h4, h5 ,h6 {
 
   .legend {
     grid-template-columns: repeat(2, 47%);
+  }
+
+  .profile-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-side .profile-pic {
+    width: 100%;
+  }
+
+  .profile-side .profile-info {
+    text-align: center;
   }
 
   .profile-menu {
